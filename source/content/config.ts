@@ -9,15 +9,7 @@ const blogCollection = defineCollection({
 			description: z.string().nonempty().optional(),
 			pubDate: z.date(),
 			tags: z
-				.array(
-					z.enum([
-						"programming",
-						"open-source",
-						"swift",
-						"javascript",
-						"nodejs",
-					]),
-				)
+				.array(z.enum(["visionOS", "books", "swift", "javascript", "nodejs"]))
 				.optional(),
 			redirectUrl: z.string().url().optional(),
 		})

@@ -3,11 +3,10 @@ title: Small Focused Modules
 description: Make small focused modules for reusability and to make it possible to build larger more advanced things that are easier to reason about.
 pubDate: 2018-10-26
 tags:
-  - open-source
-  - javascript
+  - visionOS
 ---
 
-*This was originally an [answer](https://github.com/sindresorhus/ama/issues/10#issuecomment-117766328) on my AMA (Ask Me Anything) about why I make small Node.js modules. My answer applies to Node.js and might not be applicable to your platform. The reason this works so well on Node.js is that you can have [nested dependencies](https://maxogden.com/nested-dependencies.html), so they never conflict.*
+_This was originally an [answer](https://github.com/sindresorhus/ama/issues/10#issuecomment-117766328) on my AMA (Ask Me Anything) about why I make small Node.js modules. My answer applies to Node.js and might not be applicable to your platform. The reason this works so well on Node.js is that you can have [nested dependencies](https://maxogden.com/nested-dependencies.html), so they never conflict._
 
 People get way too easily caught up in the LOC (Lines Of Code). LOC is pretty much irrelevant. It doesn’t matter if the module is one line or hundreds. It’s all about containing complexity. Think of node modules as Lego blocks. You don’t necessarily care about the details of how it’s made. All you need to know is how to use the Lego blocks to build your Lego castle. By making small focused modules you can easily build large complex systems without having to know every single detail of how everything works. Our short-term memory is finite. In addition, by having these modules as reusable packages, other people can reuse them, and when a module is improved or a bug is fixed, every consumer benefits.
 

@@ -6,4 +6,4 @@ title: RSS Feeds
 # RSS Feeds
 
 - [Blog](https://santiago.nyc/rss.xml)
-- [New Apps](https://santiago.nyc/rss-apps.xml)
+- [Posts tagged with Vision Pro](https://santiago.nyc/rss-vision-pro.xml)

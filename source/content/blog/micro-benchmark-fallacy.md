@@ -3,7 +3,7 @@ title: The Micro-Benchmark Fallacy
 description: It's a trap.
 pubDate: 2024-08-13
 tags:
-  - programming
+  - books
 ---
 
 Micro-benchmarks, while seemingly insightful, often mislead developers by presenting a skewed view of performance. They isolate small fragments of code, amplifying their significance in ways that don’t reflect real-world scenarios.

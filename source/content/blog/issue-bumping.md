@@ -2,7 +2,8 @@
 title: Issue Bumping
 pubDate: 2020-10-09
 tags:
-  - open-source
+  - books
+  - visionOS
 ---
 
 ![](/blog/issue-bumping.jpg)

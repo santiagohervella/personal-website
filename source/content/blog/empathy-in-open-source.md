@@ -3,7 +3,7 @@ title: Empathy in Open Source
 description: Open source is not just about code, it's about people.
 pubDate: 2023-05-23
 tags:
-  - open-source
+  - visionOS
 ---
 
 The success of any open source project relies on the collaboration and participation of individuals from all over the world. In order to foster a healthy and productive open source community, it's crucial to prioritize empathy and kindness towards one another.

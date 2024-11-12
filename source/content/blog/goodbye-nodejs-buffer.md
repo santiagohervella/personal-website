@@ -3,9 +3,7 @@ title: Goodbye, Node.js Buffer
 description: It's time to move from Buffer to Uint8Array.
 pubDate: 2023-10-24
 tags:
-  - nodejs
-  - javascript
-  - open-source
+  - books
 ---
 
 The [`Buffer`](https://nodejs.org/api/buffer.html) type has been the cornerstone for binary data handling in Node.js since the beginning. However, these days we have [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array), which is a native JavaScript type and works cross-platform. While `Buffer` is an instance of `Uint8Array`, it introduces numerous methods that are not available in other JavaScript environments. Consequently, code leveraging Buffer-specific methods needs polyfilling, preventing many valuable packages from being browser-compatible.
