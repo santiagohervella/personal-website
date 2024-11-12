@@ -1,9 +1,9 @@
-import rss from "@astrojs/rss";
+import rss from '@astrojs/rss';
 
-export const GET = async (context) => {
+export const GET = async context => {
 	let items = [];
 
-	items = items.map((item) => ({
+	items = items.map(item => ({
 		link: item.url,
 		title: item.title,
 		pubDate: item.pubDate,
@@ -11,8 +11,8 @@ export const GET = async (context) => {
 	}));
 
 	return rss({
-		title: "Santiago Hervella — Vision Pro",
-		description: "Posts tagged with Vision Pro by Santiago Hervella",
+		title: 'Santiago Hervella — Vision Pro',
+		description: 'Posts tagged with Vision Pro by Santiago Hervella',
 		site: context.site,
 		items,
 		trailingSlash: false,
