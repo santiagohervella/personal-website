@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Small Focused Modules
 description: Make small focused modules for reusability and to make it possible to build larger more advanced things that are easier to reason about.
 pubDate: 2018-10-26

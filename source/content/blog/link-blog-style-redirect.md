@@ -1,5 +1,5 @@
 ---
-isUnlisted: true
+draft: true
 title: Some title
 description: This is a link blog style post that just redirects
 pubDate: 2024-01-01

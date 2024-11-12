@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Empathy in Open Source
 description: Open source is not just about code, it's about people.
 pubDate: 2023-05-23
