@@ -1,5 +1,4 @@
 ---
-/// import {ViewTransitions} from 'astro:transitions';
 import {AstroSeo} from '@astrolib/seo';
 import {SITE} from '~/config.mjs';
 
@@ -11,7 +10,6 @@ const {
 	nofollow = false,
 	ogTitle = title,
 	ogType = 'website',
-	appStoreId,
 } = Astro.props;
 
 const image = _image && new URL(_image, Astro.site);
@@ -20,28 +18,18 @@ const canonicalURL = new URL(Astro.url.pathname.replace(/\.html$/, ''), Astro.si
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Sindre Sorhus">
-<meta name="twitter:site" content="@sindresorhus">
-<meta name="twitter:creator" content="@sindresorhus">
+<meta name="author" content="Santiago Hervella">
 <meta name="twitter:description" content={description}>
 <meta name="x-build-time" content={(new Date()).toUTCString()}>
-
-{appStoreId ? (
-	<meta name="apple-itunes-app" content={`app-id=${appStoreId}`}>
-	<meta name="twitter:card" content="app">
-	<meta name="twitter:app:id:iphone" content={appStoreId}>
-) : (
-	<meta name="twitter:card" content="summary">
-)}
+<meta name="twitter:card" content="summary">
 
 <link rel="sitemap" href="/sitemap-index.xml">
-<link rel="alternate" type="application/rss+xml" title="Sindre Sorhus — Blog" href="/rss.xml">
-<link rel="alternate" type="application/rss+xml" title="Sindre Sorhus — New Apps" href="/rss-apps.xml">
-<link rel="alternate" type="application/rss+xml" title="Sindre Sorhus — New Repos" href="/rss-repos.xml">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
-<script async src="https://gc.zgo.at/count.js" data-goatcounter="https://sindresorhus.goatcounter.com/count"></script>
-
-<!-- <ViewTransitions/> -->
+<link rel="alternate" type="application/rss+xml" title="Santiago Hervella — Blog" href="/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="Santiago Hervella — New Apps" href="/rss-apps.xml">
+<!-- TODO: Have a favicon other than an emoji? -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤽</text></svg>">
+<!-- TODO: Do I actually care about analytics? Read more about this free analytics provider here https://www.goatcounter.com/ -->
+<!-- <script async src="https://gc.zgo.at/count.js" data-goatcounter="https://TODO.goatcounter.com/count"></script> -->
 
 <AstroSeo
 	title={title}

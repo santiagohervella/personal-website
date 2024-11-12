@@ -1,5 +1,3 @@
-# [sindresorhus.com](https://sindresorhus.com)
+# [santiago.nyc](https://santiago.nyc)
 
-> Personal website of Sindre Sorhus
-
-*The website targets the latest version of Chrome, Safari, and Firefox.*
+> Personal website of Santiago Hervella

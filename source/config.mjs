@@ -1,8 +1,8 @@
 export const SITE = {
-	name: 'Sindre Sorhus',
-	origin: 'https://sindresorhus.com',
-	basePathname: '/',
-	title: 'Sindre Sorhus',
-	description: 'Full-Time Open-Sourcerer & Aspiring Rebel',
+	name: "Santiago Hervella",
+	origin: "https://santiago.nyc",
+	basePathname: "/",
+	title: "Santiago Hervella",
+	description: "Programmer & Musician. Aspiring Mugician",
 	blogPostsPerPage: 10,
 };
