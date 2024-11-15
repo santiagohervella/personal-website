@@ -1,14 +1,19 @@
 import rss from '@astrojs/rss';
+import {fetchPosts} from '~/utils/posts.js';
 
 export const GET = async context => {
-	let items = [];
+	let items = await fetchPosts();
 
-	items = items.map(item => ({
-		link: item.url,
-		title: item.title,
-		pubDate: item.pubDate,
-		description: item.subtitle,
-	}));
+	items = items
+		.flat()
+		.filter(item => item.tags.includes('visionOS'))
+		.map(item => ({
+			link: item.url,
+			title: item.title,
+			pubDate: item.pubDate,
+			description: item.subtitle,
+		}))
+		.sort((a, b) => b.pubDate - a.pubDate);
 
 	return rss({
 		title: 'Santiago Hervella — Vision Pro',
